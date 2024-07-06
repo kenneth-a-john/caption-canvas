@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "github.com/kenneth-a-john/greetings-gen/go-backend/greeting";
+
+service ImageService {
+  rpc GenerateGreeting (GreetingGenerationRequest) returns (GreetingGenerationResponse);
+}
+
+message GreetingGenerationRequest {
+  string message_prompt = 1;
+  string image_prompt = 2;
+}
+
+message GreetingGenerationResponse {
+    string image_path = 1;
+}
