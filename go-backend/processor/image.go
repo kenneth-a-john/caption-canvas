@@ -29,7 +29,7 @@ func (i *imageProcessor) AddTextToImage(ctx context.Context, originalpath string
 	}
 
 	dc := gg.NewContextForImage(img)
-	if err = dc.LoadFontFace("/Users/kennethjohn/Personal Docs/projects/greetings-gen/go-backend/fonts/Nunito_Sans/static/NunitoSans_7pt_SemiCondensed-ExtraBold.ttf", 60); err != nil {
+	if err = dc.LoadFontFace("/Users/kennethjohn/Personal Docs/projects/caption-canvas/go-backend/fonts/Nunito_Sans/static/NunitoSans_7pt_SemiCondensed-ExtraBold.ttf", 60); err != nil {
 		return err
 	}
 
